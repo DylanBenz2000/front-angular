@@ -8,8 +8,6 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ApiComponent implements OnInit {
 
-  url: string = 'http://localhost:27017/refaccionaria'
-  error: any;
 
   productos : any = [];
   // producto: any = {

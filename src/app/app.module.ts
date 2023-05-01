@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { ApiComponent } from './components/api/api.component';
+import { CompoPersonalComponent } from './components/compo-personal/compo-personal.component';
+import { CompoProveedoresComponent } from './components/compo-proveedores/compo-proveedores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApiComponent
+    ApiComponent,
+    CompoPersonalComponent,
+    CompoProveedoresComponent
   ],
   imports: [
     BrowserModule,
