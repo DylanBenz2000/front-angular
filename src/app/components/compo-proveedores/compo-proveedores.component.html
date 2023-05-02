@@ -1,7 +1,21 @@
-<div *ngFor="let item of proveedores">
-    <h1>{{item.nombre}}</h1>
-    <h2>{{item.apPaterno}}</h2>
-    <h2>{{item.apMaterno}}</h2>
-    <h2>{{item.telefono}}</h2>
-    <h2>{{item.estatus}}</h2>
+<div class="color">
+    <div class="titulo">
+        <h1>Proveedores</h1>
+    </div><br><br>
+    <div class="centrar">
+        <div *ngFor="let item of proveedores" class="card" style="width: 18rem;">
+                <div class="overflow">
+                    <!-- <img src="../../../assets/yo.jpg" class="img-fluid rounded-start card-img-top" alt="..."> -->
+                </div>
+                <div class="card-body bg-black">
+                    <h5 class="card-title text-center text-light">Refaccionaria Proveedores</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta</h6> -->
+                    <p class="card-text text-center text-light">{{item.nombre}}</p>
+                    <p class="card-text text-center text-light">{{item.apPaterno}}</p>
+                    <p class="card-text text-center text-light">{{item.apMaterno}}</p>
+                    <p class="card-text text-center text-light">{{item.telefono}}</p>
+                    <p class="card-text text-center text-light">{{item.direccion}}</p>
+                </div>
+        </div>
+    </div>
 </div>

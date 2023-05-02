@@ -1,0 +1,39 @@
+.color{
+    /* background: rgb(234, 69, 69); */
+    height: 130vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,64,1) 50%, rgba(203,193,68,1) 82%, rgba(252,176,69,1) 95%);
+}
+.centrar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    gap: 145px;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273)!important;
+    transition: all 0.7s linear;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.card-img-top{
+    transition: all 0.2s ease-in-out;
+}
+
+.card-img-top:hover{
+    transform: scale(1.8);
+}
+
+.titulo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

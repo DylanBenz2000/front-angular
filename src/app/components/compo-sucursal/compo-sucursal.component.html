@@ -1,0 +1,21 @@
+<div class="color">
+    <div class="titulo">
+        <h1>Sucursales</h1>
+    </div><br><br>
+    <div class="centrar">
+        <div *ngFor="let item of sucursales" class="card" style="width: 18rem;">
+                <div class="overflow">
+                    <!-- <img src="../../../assets/yo.jpg" class="img-fluid rounded-start card-img-top" alt="..."> -->
+                </div>
+                <div class="card-body bg-black">
+                    <h5 class="card-title text-center text-light">Refaccionaria Sucursales</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta</h6> -->
+                    <p class="card-text text-center text-light">{{item.direccionSucursal}}</p>
+                    <p class="card-text text-center text-light">{{item.nombreEncargado}}</p>
+                    <p class="card-text text-center text-light">{{item.municipioSucursal}}</p>
+                    <p class="card-text text-center text-light">{{item.telefono}}</p>
+                    <p class="card-text text-center text-light">{{item.email}}</p>
+                </div>
+        </div>
+    </div>
+</div>
