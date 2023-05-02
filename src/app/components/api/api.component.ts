@@ -10,17 +10,6 @@ export class ApiComponent implements OnInit {
 
 
   productos : any = [];
-  // producto: any = {
-  //   nombreProducto: '',
-  //   marcaProducto: '',
-  //   presentacionProducto: '',
-  //   contenidoProducto: '',
-  //   precioProducto:'',
-  //   proveedorProducto: '',
-  //   cantidadProductos: '',
-  //   estatusProducto: '',
-  //   descripcionProducto: '',
-  // }
 
   constructor(private _http: HttpClient) { }
 
@@ -34,11 +23,5 @@ export class ApiComponent implements OnInit {
 
   }
 
-  // guardar(){
-  //   this._http.post('http://localhost:3900/producto/nuevo', this.producto)
-  //   .subscribe(res =>{
-  //     console.log(res)
-  //   });
-  // }
 
 }

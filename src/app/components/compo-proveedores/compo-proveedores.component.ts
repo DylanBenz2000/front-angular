@@ -20,7 +20,6 @@ export class CompoProveedoresComponent implements OnInit {
       console.log(this.proveedores)
     })
 
-
   }
 
 }
