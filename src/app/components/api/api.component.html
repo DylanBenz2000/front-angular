@@ -1,5 +1,137 @@
 
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-14 offset-lg-0">
+      <div class="card">
+        <div class="card-body text-center">
+          <span>Listado de productos</span>
+          <div class="btn btn-success float-end" [routerLink]="['/crear-producto']">Nuevo</div>
 
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Presentancion</th>
+                <th scope="col">Contenido</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Estatus</th>
+                <th scope="col">Descripcion</th>
+                <th scope=""></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of listarProductos">
+                <!-- <th scope="row">1</th> -->
+                <td>{{ item.nombreProducto }}</td>
+                <td>{{ item.marcaProducto }}</td>
+                <td>{{ item.presentacionProducto }}</td>
+                <td>{{ item.contenidoProducto }}</td>
+                <td>{{ item.precioProducto }}</td>
+                <td>{{ item.proveedorProducto }}</td>
+                <td>{{ item.cantidadProductos }}</td>
+                <td>{{ item.estatusProducto }}</td>
+                <td>{{ item.descripcionProducto }}</td>
+                <td>
+                  <i [routerLink]="['/editar-producto',item._id ]" class="fa-solid fa-pen-to-square text-bg-info"></i>
+                  <i (click) = "eliminarProducto(item._id)" class="fa-solid fa-trash text-primary text-danger"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Nombre: <input [(ngModel)]="producto.nombreProducto" type="text" placeholder="Nombre"> <br>
+Marca: <input [(ngModel)]="producto.marcaProducto" type="text" placeholder="Marca"> <br>
+Presentacion: <input [(ngModel)]="producto.presentacionProducto" type="text" placeholder="Presentacion"> <br>
+Contenido: <input [(ngModel)]="producto.contenidoProducto" type="text" placeholder="Contenido"> <br>
+Precio: <input [(ngModel)]="producto.precioProducto" type="text" placeholder="Precio"> <br>
+Proveedor: <input [(ngModel)]="producto.proveedorProducto" type="text" placeholder="Proveedor"> <br>
+Cantidad: <input [(ngModel)]="producto.cantidadProductos" type="text" placeholder="Cantidad"> <br>
+Estatus: <input [(ngModel)]="producto.estatusProducto" type="text" placeholder="Estatus"> <br>
+Descripcion: <input [(ngModel)]="producto.descripcionProducto" type="text" placeholder="Descripcion"> <br>
+
+<button type="button" (click)="guardar()">Guardar</button>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre producto</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Presentacion</th>
+        <th scope="col">Contenido</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Proveedor</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Estatus</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="5">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Nombre producto</td>
+            <td>Marca</td>
+            <td>Presentacion</td>
+            <td>Contenido</td>
+            <td>Precio</td>
+            <td>Proveedor</td>
+            <td>Cantidad</td>
+            <td>Estatus</td>
+            <td>Descripcion</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of productos">
+            <td>{{item.nombreProducto}}</td>
+            <td>{{item.marcaProducto}}</td>
+            <td>{{item.presentacionProducto}}</td>
+            <td>{{item.contenidoProducto}}</td>
+            <td>{{item.precioProducto}}</td>
+            <td>{{item.proveedorProducto}}</td>
+            <td>{{item.cantidadProductos}}</td>
+            <td>{{item.estatusProducto}}</td>
+            <td>{{item.descripcionProducto}}</td>
+            <td><button (click)="eliminar(item._id)">X</button></td>
+        </tr>
+    </tbody>
+</table> -->
+
+<!-- 
 <div class="color">
     <div class="titulo">
         <h1>Productos</h1>
@@ -7,11 +139,11 @@
     <div class="centrar">
         <div *ngFor="let item of productos" class="card" style="width: 18rem;">
                 <div class="overflow">
-                    <!-- <img src="../../../assets/yo.jpg" class="img-fluid rounded-start card-img-top" alt="..."> -->
+                    
                 </div>
                 <div class="card-body bg-black">
                     <h5 class="card-title text-center text-light">Productos Refaccionaria</h5>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta</h6> -->
+                    
                     <p class="card-text text-center text-light">{{item.nombreProducto}}</p>
                     <p class="card-text text-center text-light">{{item.marcaProducto}}</p>
                     <p class="card-text text-center text-light">{{item.presentacionProducto}}</p>
@@ -24,4 +156,4 @@
                 </div>
         </div>
     </div>
-</div>
+</div> -->
